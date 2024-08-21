@@ -1,0 +1,101 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  display: block;
+  font-size: 36;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  display: block;
+  font-size: 26;
+  border-bottom: 1px solid rgba(33, 26, 0, 0.7);
+  padding-bottom: 30px;
+}
+
+form {
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.text-input {
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 20px;
+  line-height: 20px;
+  color: #272044;
+  background-color: #ffffff;
+}
+
+.text-input:focus {
+  outline: none;
+  background-color: #ffffff;
+}
+.text-input:-webkit-autofill:focus {
+  background-color: #ffffff !important; /* Force the background to stay white */
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset; /* Prevent autofill background color */
+}
+
+.submit-button {
+  margin-left: 10px;
+  background: #326657;
+  color: white;
+  border: none;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 14px 24px;
+}
+
+.recipe {
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  line-height: 1.5;
+  border-left: 3px solid #326657;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+  text-align: justify;
+  border-radius: 5px;
+}
+
+.body-page {
+  margin-left: 8%;
+  width: 600px;
+  position: flex;
+}
+
+.container {
+  background-color: #abc7c7;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(33, 26, 0, 0.7);
+}

@@ -2,57 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=
-    
-    , initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI recipe generator</title>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="container">
-      <h1>AI recipe generator</h1>
+    <div class="body-page">
+      <div class="container">
+        <h1>What would you like to prepare?</h1>
+        <h2>AI recipe generator</h2>
 
-      <form id="text-input">
-        <input
-          type="text"
-          placeholder="What should your recipe contain...?"
-          required
-          autofocus
-          minlength="3"
-          class="text-input"
-          id="text-input"
-        />
-        <input type="submit" value="search" class="submit-button" />
-      </form>
+        <form id="form">
+          <input
+            type="text"
+            placeholder="What should your recipe contain...?"
+            required
+            autofocus
+            minlength="3"
+            class="text-input"
+            id="text-input"
+          />
+          <input type="submit" value="search" class="submit-button" />
+        </form>
 
-      <div class="recipe"></div>
+        <div id="recipe"></div>
+      </div>
+
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/Adriana-Aki" target="_blank"
+            >Adriana Janockova</a
+          >
+          and is on
+          <a
+            href="https://github.com/Adriana-Aki/shecodes-ai-project"
+            target="_blank"
+          >
+            GitHub</a
+          >
+          and hosted on
+          <a href="https://ai-recipe-app-adrianaj.netlify.app/" target="_blank">
+            Netlify</a
+          >
+        </p>
+      </footer>
     </div>
-
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/Adriana-Aki" target="_blank"
-          >Adriana Janockova</a
-        >
-        and is on
-        <a
-          href="https://github.com/Adriana-Aki/shecodes-ai-project"
-          target="_blank"
-        >
-          GitHub</a
-        >
-        and hosted on
-        <a href="https://ai-recipe-app-adrianaj.netlify.app/" target="_blank">
-          Netlify</a
-        >
-      </p>
-    </footer>
-
     <script src="src/index.js"></script>
   </body>
 </html>
