@@ -19,19 +19,21 @@
       <div class="container">
         <h1>What would you like to prepare?</h1>
         <h2>AI recipe generator</h2>
-
-        <form id="form">
-          <input
-            type="text"
-            placeholder="What should your recipe contain...?"
-            required
-            autofocus
-            minlength="3"
-            class="text-input"
-            id="text-input"
-          />
-          <input type="submit" value="search" class="submit-button" />
-        </form>
+        <div class="form-container">
+          <form id="form">
+            <input
+              type="text"
+              placeholder="What should your recipe contain...?"
+              required
+              autofocus
+              minlength="3"
+              class="text-input"
+              id="text-input"
+            />
+            <input type="submit" value="search" class="submit-button" />
+          </form>
+          <div class="hint">i.e: cheese, pasta, tomato...</div>
+        </div>
 
         <div id="recipe"></div>
       </div>
