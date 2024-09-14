@@ -1,8 +1,11 @@
 function displayRecipe(response) {
   console.log(response.data.answer);
 
+  let recipe = marked.parse(response.data.answer);
+  console.log(recipe);
+
   new Typewriter(".recipe", {
-    strings: response.data.answer,
+    strings: recipe,
     autoStart: true,
     cursor: null,
     delay: 20,
